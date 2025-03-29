@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  background-color: bisque;
+  margin-inline: 3rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+.title{
+  text-align: center;
+}
+
+.header-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-images img {
+  height: 70px;
+  width: auto;
+}
+
+.hero {
+  border: 2px solid black;
+  background-color: #fffbf0;
+}
+
+.hero div {
+  display: flex;
+}
+
+.hero img {
+  height: auto;
+  width: 300px;
+}
+
+.hero h2,
+.hero h3 {
+  margin-left: 2rem;
+}
+
+.sub-hero {
+  border: 0.5px solid black;
+  background-color: #fffbf0;
+}
+
+.sub-hero h2,
+.sub-hero h3,
+.sub-hero h4,
+.sub-hero p {
+  margin-left: 2rem;
+}
+
+table {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+table th {
+  background-color: #f0ad66;
+}
+.travel {
+  background-color: #f0ad66;
+}
+table tr {
+  background-color: #ffe9ac;
+}
+
+.contact {
+  border: 0.5px solid black;
+  background-color: #fffbf0;
+}
+
+.contact h3,
+.contact > div {
+  margin: 2rem;
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer > a {
+  margin-inline: 1rem;
+}
