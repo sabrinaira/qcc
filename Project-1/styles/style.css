@@ -1,9 +1,13 @@
+* a {
+  color:brown;
+}
+
 body {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding: 0px;
   margin: 0px;
   background-color: bisque;
@@ -31,7 +35,7 @@ header {
 }
 
 .hero {
-  border: 2px solid black;
+  border: 2px solid #aa6161;
   background-color: #fffbf0;
 }
 
@@ -41,12 +45,16 @@ header {
 
 .hero img {
   height: auto;
-  width: 300px;
+  width: 90%;
 }
 
 .hero h2,
 .hero h3 {
   margin-left: 2rem;
+}
+
+.hero p {
+  margin-right: 3rem;
 }
 
 .sub-hero {
@@ -59,6 +67,19 @@ header {
 .sub-hero h4,
 .sub-hero p {
   margin-left: 2rem;
+}
+
+#events>ul>li {
+padding: 0.3rem;
+}
+
+#news>h4{
+  margin-bottom: -12px;
+}
+
+#news>p {
+  margin-left: 5rem;
+  margin-right: 3rem;
 }
 
 table {
@@ -81,9 +102,27 @@ table tr {
   background-color: #fffbf0;
 }
 
+.contact div {
+display: flex;
+align-items: center;
+width: 20%;
+}
+
+.contact div:hover {
+  background-color: #ebd8c4;
+}
+
 .contact h3,
 .contact > div {
   margin: 2rem;
+}
+
+.contact>div>img {
+  margin-right: 1rem;
+}
+
+.contact>div>a {
+  margin-left: 10px;
 }
 
 footer {
@@ -91,6 +130,7 @@ footer {
   text-align: center;
 }
 
-footer > a {
+footer > nav > a {
   margin-inline: 1rem;
+  font-size: large;
 }

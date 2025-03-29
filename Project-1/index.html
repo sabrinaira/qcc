@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Philippines</title>
   </head>
   <body>
@@ -12,11 +12,9 @@
         <img src="./assets/960px-Flag_of_the_Philippines.svg.png" />
         <img src="./assets/philipines.png" />
       </div>
-
       <hr />
       <h1 class="title">Philippines</h1>
-
-      <p>
+      <p class="title">
         The <b>Philippines</b> is an archipelago, or string of over 7,100
         islands, in southeastern Asia between the South China Sea and the
         Pacific Ocean.
@@ -28,9 +26,21 @@
         <h2>What to do in the Philippines!</h2>
         <h3>Intramuros: The Walled City of Manila</h3>
         <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Fort_Santiago%2C_Intramuros.JPG"
-          />
+          <figure>
+            <a
+              href="https://en.wikipedia.org/wiki/Intramuros#/media/File:Fort_Santiago,_Intramuros.JPG"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Fort_Santiago%2C_Intramuros.JPG"
+            /></a>
+            <figcaption>
+              <em
+                >Gate of Fort Santiago — Intramuros, in Manila, the Philippines.
+                Gate was built in 1714, rebuilt after WW II damage.</em
+              >
+            </figcaption>
+          </figure>
           <p>
             Stepping into Intramuros feels like traveling back in time to the
             Spanish colonial era of the Philippines. Surrounded by massive stone
@@ -49,9 +59,17 @@
         </div>
         <h3>Chocolate Hills: Bohol’s Natural Wonder</h3>
         <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/af/Chocolate_Hills_Bohol.JPG"
-          />
+          <figure>
+            <a
+              href="https://en.wikipedia.org/wiki/Chocolate_Hills#/media/File:Chocolate_Hills_Bohol.JPG"
+              target="_blank"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Chocolate_Hills_Bohol.JPG"
+            /></a>
+            <figcaption>
+              <em>Aerial view of the Chocolate Hills, Bohol, Philippines</em>
+            </figcaption>
+          </figure>
           <p>
             The Chocolate Hills of Bohol are one of the most breathtaking and
             surreal landscapes in the Philippines. Spanning over 50 square
@@ -69,17 +87,27 @@
         </div>
       </section>
       <hr />
-      <section class="sub-hero">
+      <section class="sub-hero" id="events">
         <h3>Upcoming Events</h3>
         <ul>
-          <li><a href="">Sinulog Festival</a></li>
-          <li><a href="">Kadayawan Festival</a></li>
-          <li><a href="">Aurora Music Festival</a></li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Sinulog">Sinulog Festival</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Kadayawan_Festival"
+              >Kadayawan Festival</a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Aurora_Music_Festival"
+              >Aurora Music Festival</a
+            >
+          </li>
         </ul>
       </section>
 
       <hr />
-      <section class="sub-hero">
+      <section class="sub-hero" id="news">
         <h3>News</h3>
         <h4><em>Allure Magazine to Launch Philippine Edition in 2025</em></h4>
         <p>
@@ -173,9 +201,25 @@
       <hr />
       <section class="contact">
         <h3>Contact Information:</h3>
-        <div>Phone: <a href="">+63 917 123 4567</a></div>
-        <div>Email to: <a href="">Sabrina Ira</a></div>
-        <div><a href="">Follow us on Facebook!</a></div>
+        <div>
+          <img src="./assets/icons8-call-50.png" alt="call" />
+          <p>Phone:</p>
+          <a href="https://example.com/" target="_blank">+63 917 123 4567</a>
+        </div>
+        <div>
+          <img src="./assets/icons8-email-50.png" alt="email" />
+          <p>Email to:</p>
+          <a href="mailto:tanzanite.moonlit568@aleeas.com" target="_blank"
+            >Sabrina Ira</a
+          >
+        </div>
+        <div>
+          <img src="./assets/icons8-facebook-50.png" alt="facebook" /><a
+            href="https://www.facebook.com/"
+            target="_blank"
+            >Follow us on Facebook!</a
+          >
+        </div>
       </section>
     </main>
 
@@ -183,10 +227,10 @@
 
     <footer>
       <nav>
-        <a href="">Home</a>
-        <a href="">Page 1</a>
-        <a href="">Page 2</a>
-        <a href="">Contact</a>
+        <a href="./index.html">Home</a>
+        <a href="./zipline.html">Zipline</a>
+        <a href="./mayon.html">Mayon</a>
+        <a href="./contact.html">Contact</a>
       </nav>
       <p>&copy; Project 1 - Sabrina Ira</p>
     </footer>
