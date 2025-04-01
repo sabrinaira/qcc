@@ -14,39 +14,47 @@ footer {
   width: auto;
 }
 
+nav {
+  margin-bottom: 2rem;
+}
+nav ul {
+  display: flex;
+  margin: 0px;
+}
+
+nav > ul > li {
+  width: auto;
+}
+
 footer {
+  margin-top: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 5%;
 }
 
-nav {
-  margin-bottom: 2rem;
-}
-footer {
-  margin-top: 2rem;
-}
-
-nav a:hover {
+nav li:hover {
   background-color: orange;
-  padding-inline: 1.6rem;
+  padding-inline: 1.3rem;
   transition: 0.3s;
 }
 
-nav ul {
-  display: flex;
-}
-
-nav a,
+nav > ul > li,
 footer p {
+  list-style: none;
   color: white;
   text-decoration: none;
   /* padding-inline: 3rem; */
-  margin-inline: 1rem;
+  margin-inline: 0.9rem;
   padding: 1rem;
   font-family: sans-serif;
   transition: 0.3s;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
 }
 
 main {
@@ -88,7 +96,7 @@ iframe {
 }
 
 .row2 > div > .corsiva {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: rgb(255, 217, 236);
 }
 
@@ -100,7 +108,6 @@ iframe {
   width: 500px;
   margin: 0px;
 }
-
 
 img {
   height: auto;
@@ -137,3 +144,17 @@ img {
 .textarea {
   margin-block: 0.5rem;
 } */
+
+#github-link {
+  color: orange;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#github-link:hover {
+  color: rgb(255, 173, 200);
+  transition: 0.3s;
+  text-shadow: 10px 10px 20px rgb(246, 177, 226);
+}
