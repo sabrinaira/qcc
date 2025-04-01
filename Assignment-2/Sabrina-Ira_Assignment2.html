@@ -10,13 +10,16 @@
     <main>
       <nav>
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">BOOK</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#" onclick="document.getElementById('modal').style.display='block'" class="menu-link">HOME</a></li>
+          <li><a href="#" onclick="document.getElementById('modal').style.display='block'" class="menu-link">ABOUT</a></li>
+          <li><a href="#" onclick="document.getElementById('modal').style.display='block'" class="menu-link">BOOK</a></li>
+          <li><a href="#" onclick="document.getElementById('modal').style.display='block'" class="menu-link">CONTACT</a></li>
         </ul>
       </nav>
-      <section class="modal"></section>
+      <section id="modal" class="modal">
+        <span onclick="document.getElementById('modal').style.display='none'" class="x-button topright">&times;</span>
+        <p>This is a pop-up window.</p>
+      </section>
       <section class="webpage">
         <iframe
           src="https://sabrinaira.github.io/qcc/Assignment-1/Sabrina-Ira_Assignment1.html"
@@ -32,7 +35,7 @@
           <p class="corsiva">
             This is the lightpink paragraph, font family is NOT Corsiva
           </p>
-          <button class="button">This is a Button</button>
+          <button class="button" href="#" onclick="document.getElementById('modal').style.display='block'">This is a Button</button>
         </div>
       </section>
       <footer>
@@ -42,7 +45,7 @@
               >Study button, input, form, and text area elements</label
             >
           </p>
-          <button class="studyButton">Study button</button>
+          <button class="studyButton" href="#" onclick="document.getElementById('modal').style.display='block'">Study button</button>
           <input type="text" value="This is an input element" class="input" />
           <textarea class="textarea" rows="4" cols="50">
 This is a textarea element</textarea
