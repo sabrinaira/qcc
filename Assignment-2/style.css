@@ -14,6 +14,13 @@ footer {
   width: auto;
 }
 
+footer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
 nav {
   margin-bottom: 2rem;
 }
@@ -25,6 +32,10 @@ nav a:hover {
   background-color: orange;
   padding-inline: 1.6rem;
   transition: 0.3s;
+}
+
+nav ul {
+  display: flex;
 }
 
 nav a,
@@ -59,17 +70,37 @@ iframe {
   margin-inline: 3rem;
 }
 
+.rightblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .row2 > div > .arial {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: hotpink;
 }
 
 .row2 > div > .courier {
   font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(255, 167, 211);
 }
 
 .row2 > div > .corsiva {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(255, 217, 236);
 }
+
+.row2 > div > .arial,
+.row2 > div > .courier,
+.row2 > div > .corsiva {
+  padding: 1rem;
+  height: auto;
+  width: 500px;
+  margin: 0px;
+}
+
 
 img {
   height: auto;
@@ -77,3 +108,32 @@ img {
   border: 2px solid #000000;
   border-radius: 1rem;
 }
+
+.button {
+  margin-top: 1rem;
+}
+
+.button,
+.studyButton {
+  cursor: pointer;
+  background-color: rgb(238, 159, 11);
+  color: white;
+  padding: 0.5rem;
+  width: 150px;
+  border: 0;
+  transition: 0.3s;
+}
+
+.button:hover,
+.studyButton:hover {
+  background-color: rgb(255, 196, 124);
+  color: black;
+  transition: 0.3s;
+  box-shadow: 0px 5px 10px rgb(75, 47, 47);
+}
+
+/* .studyButton,
+.input,
+.textarea {
+  margin-block: 0.5rem;
+} */

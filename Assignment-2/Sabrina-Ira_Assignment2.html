@@ -9,10 +9,12 @@
   <body>
     <main>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Book</a>
-        <a href="#">Contact</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
       <section class="webpage">
         <iframe
@@ -21,15 +23,25 @@
       </section>
       <section class="row2">
         <img src="./assets/1733725507977.jpeg" alt="image" />
-        <div>
+        <div class="rightblock">
           <p class="arial">This is a hotpink paragraph, font family is Arial</p>
-          <p class="courier">This is the pink paragraph, font family is Courier</p>
-          <p class="corsiva">This is the lightpink paragraph, font family is Corsiva</p>
-          <button>This is a Button</button>
+          <p class="courier">
+            This is the pink paragraph, font family is Courier
+          </p>
+          <p class="corsiva">
+            This is the lightpink paragraph, font family is NOT Corsiva
+          </p>
+          <button class="button">This is a Button</button>
         </div>
       </section>
       <footer>
-        <p>Study button, input, form, and text area elements</p>
+        <form>
+          <p><label for="textarea">Study button, input, form, and text area elements</label></p>
+          <button class="studyButton">Study button</button>
+        <input type="text" value="This is an input element" class="input">
+        <textarea class="textarea" rows="4" cols="50">This is a textarea element</textarea>
+        <input type="submit" value="Submit Input" class="input">
+      </form>
       </footer>
     </main>
   </body>
