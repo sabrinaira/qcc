@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Philippines</title>
   </head>
   <body>
@@ -13,34 +19,19 @@
         <img src="./assets/philipines.png" />
       </div>
       <hr />
-      <h1 class="title">Philippines</h1>
-      <p class="title">
+      <h1>Philippines</h1>
+      <p>
         The <b>Philippines</b> is an archipelago, or string of over 7,100
         islands, in southeastern Asia between the South China Sea and the
         Pacific Ocean.
       </p>
     </header>
-
+    <br />
     <main>
       <section class="hero">
         <h2>What to do in the Philippines!</h2>
         <h3>Intramuros: The Walled City of Manila</h3>
-        <div>
-          <figure>
-            <a
-              href="https://en.wikipedia.org/wiki/Intramuros#/media/File:Fort_Santiago,_Intramuros.JPG"
-              target="_blank"
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Fort_Santiago%2C_Intramuros.JPG"
-            /></a>
-            <figcaption>
-              <em
-                >Gate of Fort Santiago — Intramuros, in Manila, the Philippines.
-                Gate was built in 1714, rebuilt after WW II damage.</em
-              >
-            </figcaption>
-          </figure>
+        <div class="image1">
           <p>
             Stepping into Intramuros feels like traveling back in time to the
             Spanish colonial era of the Philippines. Surrounded by massive stone
@@ -56,9 +47,24 @@
             past, blending history, culture, and romance in one unforgettable
             experience.
           </p>
+          <figure>
+            <a
+              href="https://en.wikipedia.org/wiki/Intramuros#/media/File:Fort_Santiago,_Intramuros.JPG"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Fort_Santiago%2C_Intramuros.JPG"
+            /></a>
+            <figcaption>
+              <em
+                >Gate of Fort Santiago — Intramuros, in Manila, the Philippines.
+                Gate was built in 1714, rebuilt after WW II damage.</em
+              >
+            </figcaption>
+          </figure>
         </div>
         <h3>Chocolate Hills: Bohol’s Natural Wonder</h3>
-        <div>
+        <div class="image2">
           <figure>
             <a
               href="https://en.wikipedia.org/wiki/Chocolate_Hills#/media/File:Chocolate_Hills_Bohol.JPG"
@@ -89,21 +95,26 @@
       <hr />
       <section class="sub-hero" id="events">
         <h3>Upcoming Events</h3>
-        <ul>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Sinulog">Sinulog Festival</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Kadayawan_Festival"
-              >Kadayawan Festival</a
-            >
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Aurora_Music_Festival"
-              >Aurora Music Festival</a
-            >
-          </li>
-        </ul>
+        <div>
+          <ul>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Sinulog"
+                >Sinulog Festival</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Kadayawan_Festival"
+                >Kadayawan Festival</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Aurora_Music_Festival"
+                >Aurora Music Festival</a
+              >
+            </li>
+          </ul>
+          <img src="./assets/640px-SINULOG_FESTIVAL_QUEEN_02.jpg" />
+        </div>
       </section>
 
       <hr />
@@ -144,59 +155,62 @@
       <hr />
       <section class="sub-hero">
         <h3>How much is the trip to the Philippines?</h3>
-        <table>
-          <tr>
-            <th></th>
-            <th>Price (USD)</th>
-            <th>Philippine Pesos (PHP)</th>
-          </tr>
-          <tr>
-            <td>Ticket Cost from JFK to Manila</td>
-            <td>$1200</td>
-            <td>₱66,000</td>
-          </tr>
-          <tr>
-            <td>Hotel for 2 per night</td>
-            <td>
-              <div>
-                <h5>Budget</h5>
-                $35 - $66
-              </div>
-              <div>
-                <h5>Mid-range</h5>
-                $70 - $149
-              </div>
-              <div>
-                <h5>Luxury</h5>
-                $220
-              </div>
-            </td>
-            <td>
-              <div>
-                <h5>Budget</h5>
-                ₱1,925 - ₱3,630
-              </div>
-              <div>
-                <h5>Mid-range</h5>
-                ₱3,850 - ₱8,195
-              </div>
-              <div>
-                <h5>Luxury</h5>
-                ₱12,100
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Food expenses per day</td>
-            <td>$31</td>
-            <td>₱1,705</td>
-          </tr>
-          <tr class="travel">
-            <td>Travel/ Commute</td>
-            <td>$10</td>
-            <td>₱550</td>
-          </tr>
-        </table>
+        <div class="travel-info">
+          <table>
+            <tr>
+              <th></th>
+              <th>Price (USD)</th>
+              <th>Philippine Pesos (PHP)</th>
+            </tr>
+            <tr>
+              <td>Ticket Cost from JFK to Manila</td>
+              <td>$1200</td>
+              <td>₱66,000</td>
+            </tr>
+            <tr>
+              <td>Hotel for 2 per night</td>
+              <td>
+                <div>
+                  <h5>Budget</h5>
+                  $35 - $66
+                </div>
+                <div>
+                  <h5>Mid-range</h5>
+                  $70 - $149
+                </div>
+                <div>
+                  <h5>Luxury</h5>
+                  $220
+                </div>
+              </td>
+              <td>
+                <div>
+                  <h5>Budget</h5>
+                  ₱1,925 - ₱3,630
+                </div>
+                <div>
+                  <h5>Mid-range</h5>
+                  ₱3,850 - ₱8,195
+                </div>
+                <div>
+                  <h5>Luxury</h5>
+                  ₱12,100
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Food expenses per day</td>
+              <td>$31</td>
+              <td>₱1,705</td>
+            </tr>
+            <tr class="travel">
+              <td>Travel/ Commute</td>
+              <td>$10</td>
+              <td>₱550</td>
+            </tr>
+          </table>
+          <img src="./assets/philipines.png" />
+        </div>
       </section>
       <hr />
       <section class="contact">
@@ -228,10 +242,11 @@
     <footer>
       <nav>
         <a href="./index.html">Home</a>
-        <a href="./zipline.html">Zipline</a>
-        <a href="./mayon.html">Mayon</a>
-        <a href="./contact.html">Contact</a>
+        <a href="./pages/hinatuan.html">Hinatuan Enchanted River</a>
+        <a href="./pages/mayon.html">Mayon Volcano</a>
+        <a href="./pages/contact.html">Contact</a>
       </nav>
+      <img src="./assets/3253485_flag_philiooines_country_world_icon.svg" />
       <p>&copy; Project 1 - Sabrina Ira</p>
     </footer>
   </body>

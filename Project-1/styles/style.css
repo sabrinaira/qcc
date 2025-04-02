@@ -1,26 +1,35 @@
 * a {
-  color:brown;
+  color: brown;
 }
 
 body {
-  /* display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center; */
   padding: 0px;
   margin: 0px;
   background-color: bisque;
   margin-inline: 3rem;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Mona Sans', 'Nunito Sans', 'Open Sans';
 }
 
 header {
   margin-top: 2rem;
 }
 
-.title{
+hr {
+  margin: 1rem;
+}
+
+header h1,
+header p {
   text-align: center;
+}
+
+header h1 {
+  color: #b55252;
+  font-size: 50px;
+}
+
+header p {
+  color: black;
 }
 
 .header-images {
@@ -34,18 +43,38 @@ header {
   width: auto;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 10%;
+}
+
+section {
+  border-radius: 1rem;
+}
+
 .hero {
   border: 2px solid #aa6161;
   background-color: #fffbf0;
 }
 
-.hero div {
+.hero > div {
   display: flex;
+  align-items: center;
 }
 
-.hero img {
+.hero .image1,
+.hero .image2 {
   height: auto;
-  width: 90%;
+}
+
+.hero .image1 img {
+  width: 200px;
+}
+
+.hero .image2 img {
+  width: 300px;
 }
 
 .hero h2,
@@ -53,12 +82,22 @@ header {
   margin-left: 2rem;
 }
 
-.hero p {
+.hero .image1 p,
+.hero .image2 p {
+  font-size: large;
+}
+
+.hero .image1 p {
+  margin-left: 3rem;
+}
+
+.hero .image2 p {
   margin-right: 3rem;
 }
 
-.sub-hero {
-  border: 0.5px solid black;
+.sub-hero,
+.contact {
+  border: 0.5px solid #eb8484;
   background-color: #fffbf0;
 }
 
@@ -67,24 +106,54 @@ header {
 .sub-hero h4,
 .sub-hero p {
   margin-left: 2rem;
+  margin-bottom: 0px;
 }
 
-#events>ul>li {
-padding: 0.3rem;
+#events > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
-#news>h4{
+#events > div > ul > li {
+  padding: 1rem;
+}
+
+#events > div > img {
+  height: auto;
+  width: 400px;
+  padding: 1rem;
+}
+
+#news > h4 {
   margin-bottom: -12px;
 }
 
-#news>p {
+#news > p {
   margin-left: 5rem;
   margin-right: 3rem;
+  margin-bottom: 1rem;
+}
+
+.travel-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.travel-info > img {
+  height: 200px;
+  width: auto;
 }
 
 table {
+  margin-top: 1rem;
   margin-left: 2rem;
   margin-bottom: 1rem;
+  box-shadow: 5px 5px 0px 2px #d98383;
 }
 
 table th {
@@ -97,19 +166,28 @@ table tr {
   background-color: #ffe9ac;
 }
 
+table tr td {
+  width: 180px;
+}
+
 .contact {
-  border: 0.5px solid black;
-  background-color: #fffbf0;
+  box-shadow: 5px 5px 0px 2px #d98383;
 }
 
 .contact div {
-display: flex;
-align-items: center;
-width: 20%;
+  display: flex;
+  align-items: center;
 }
 
+#events > div > ul > li:hover,
 .contact div:hover {
   background-color: #ebd8c4;
+  transition: 0.3s;
+}
+
+#events > div > ul > li,
+.contact > div {
+  transition: 0.3s;
 }
 
 .contact h3,
@@ -117,20 +195,90 @@ width: 20%;
   margin: 2rem;
 }
 
-.contact>div>img {
+.contact > div > img {
   margin-right: 1rem;
+  padding-inline: 1rem;
 }
 
-.contact>div>a {
+.contact > div > a {
   margin-left: 10px;
 }
 
+/* Footer */
 footer {
   margin-top: 1rem;
   text-align: center;
 }
 
+footer > nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
 footer > nav > a {
+  text-decoration: none;
   margin-inline: 1rem;
+  padding: 0.8rem;
   font-size: large;
+}
+
+footer > nav > a:hover {
+  background-color: #aa6161;
+  color: #ffe9ac;
+}
+
+footer > nav > a,
+footer > nav > a:hover {
+  transition: 0.3s;
+  border-radius: 1rem;
+}
+
+footer > img {
+  height: auto;
+  width: 100px;
+}
+
+/* Sub-pages */
+.threeRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.threeRow > div {
+  border: 2px solid #eb8484;
+  height: 300px;
+  width: auto;
+  margin: 0.4rem;
+}
+
+.threeRow .paragraph {
+  background-color: #fff5eb;
+  box-shadow: inset 0 0 0 5px rgb(234, 206, 206); /* inner border */
+}
+
+.threeRow .paragraph > p {
+  width: 300px;
+  font-size: medium;
+  text-align: center;
+  margin: 1rem;
+}
+
+.threeRow > div > img {
+  height: 300px;
+  width: auto;
+}
+
+/* .threeRow > div, .threeRow > div > img {
+  border-radius: 0.4rem;
+} */
+
+.content {
+  margin-inline: 6rem;
+  background-color: #fff5eb;
+  padding: 1rem;
+  border: 1px solid #eb8484;
+  box-shadow: 5px 5px 0px 2px #d98383;
 }
