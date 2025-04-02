@@ -282,3 +282,63 @@ footer > img {
   border: 1px solid #eb8484;
   box-shadow: 5px 5px 0px 2px #d98383;
 }
+
+/* Contact Form */
+.contact-form {
+  align-items: center;
+  color: #632d2d;
+}
+
+.contact-form section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form section div {
+  margin: 1.5rem;
+}
+
+.contact-form address p a {
+  margin-left: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form input {
+  margin-bottom: 1rem;
+  margin-inline: 0.5rem;
+  width: 250px;
+  height: 30px;
+  border: 1px solid #eb8484;
+  box-shadow: inset 0 0 5px 0.5px rgb(234, 206, 206);
+}
+
+.form button {
+  width: 100px;
+  align-self: flex-end;
+  background-color: #ffd5a9;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: #aa6161;
+  transition: 0.3s;
+  box-shadow: 3px 3px 0px 1px #d98383;
+}
+
+.form button:hover {
+  background-color: #aa6161;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #ffe9ac;
+  box-shadow: 3px 3px 0px 1px #4f3316;
+}
+
+#text-box {
+  height: 150px;
+  border: 1px solid #eb8484;
+  box-shadow: inset 0 0 5px 0.5px rgb(234, 206, 206);
+}
