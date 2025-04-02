@@ -57,6 +57,16 @@ section {
 .hero {
   border: 2px solid #aa6161;
   background-color: #fffbf0;
+  box-shadow: inset 0 0 0 5px rgb(234, 206, 206);
+}
+
+.greeting {
+  font-size: 45px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #d96b6b;
 }
 
 .hero > div {
@@ -121,10 +131,18 @@ section {
   padding: 1rem;
 }
 
-#events > div > img {
+#events > div > ul > li,
+.contact > div {
+  transition: 0.3s;
+}
+
+#events figure img {
   height: auto;
-  width: 400px;
-  padding: 1rem;
+  width: 430px;
+}
+
+#events figcaption {
+  text-align: center;
 }
 
 #news > h4 {
@@ -182,11 +200,6 @@ table tr td {
 #events > div > ul > li:hover,
 .contact div:hover {
   background-color: #ebd8c4;
-  transition: 0.3s;
-}
-
-#events > div > ul > li,
-.contact > div {
   transition: 0.3s;
 }
 
@@ -256,7 +269,7 @@ footer > img {
 
 .threeRow .paragraph {
   background-color: #fff5eb;
-  box-shadow: inset 0 0 0 5px rgb(234, 206, 206); /* inner border */
+  box-shadow: inset 0 0 0 5px rgb(234, 206, 206);
 }
 
 .threeRow .paragraph > p {
@@ -270,10 +283,6 @@ footer > img {
   height: 300px;
   width: auto;
 }
-
-/* .threeRow > div, .threeRow > div > img {
-  border-radius: 0.4rem;
-} */
 
 .content {
   margin-inline: 6rem;
