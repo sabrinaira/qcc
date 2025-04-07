@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  background-color: #00306e;
+  font-family: Fredoka;
+  color: white;
+}
+
+* a {
+  text-decoration: none;
+}
+
+h1, p {
+  color: #f8b332;
+  font-family: Nunito Sans;
+}
+
+.list {
+  list-style-type: none;
+  /* border: 2px solid red; */
+}
+
+.list > li {
+  margin: 1rem;
+  padding: 1rem;
+}
+.list > li:hover {
+  background-color: #081731;
+  color: black;
+}
+
+.list > li > a {
+  color: white;
+}
+
+/* .list > li > a:hover {
+  color: black;
+} */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+footer > p > a {
+  color: white;
+}
+
+footer > p > a:hover {
+  color: #f8b332;
+}
