@@ -1,0 +1,82 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: rgb(229, 238, 238);
+}
+
+main {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.menu,
+section {
+  margin-inline: 3rem;
+}
+
+.menu {
+  width: 25%;
+  list-style-type: none;
+  margin-left: 0;
+  /* border: 2px solid red; */
+  height: auto;
+}
+
+.menu > li {
+  padding: 2rem;
+  background-color: rgb(107, 223, 255);
+  color: aliceblue;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.menu > li:hover {
+  background-color: rgb(233, 70, 70);
+  color: white;
+  transition: 0.3s;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+section > div {
+  display: flex;
+}
+
+.block > div {
+  width: 30%;
+  text-align: center;
+  border: 2px solid rgb(234, 31, 31);
+  margin-inline: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.block > div:hover {
+  border: 2px solid rgb(234, 183, 31);
+  transition: 0.3s;
+}
+
+.block > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.image {
+  border-radius: 1em;
+  box-shadow: 5px 5px 5px rgb(243, 202, 80);
+}
+
+.textBlock {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px rgb(243, 80, 80);
+}
+
+.textBlock > p {
+  padding-inline: 30px;
+}
