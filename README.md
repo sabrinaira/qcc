@@ -1,4 +1,6 @@
-# [Sabrina Ira - QCC-CUNY SWE Program Spring 2025](https://sabrinaira.github.io/qcc/)
+# Sabrina Ira - QCC-CEWD CUNY SWE Program Spring 2025
+
+## [View full directory by clicking here.](https://sabrinaira.github.io/qcc/)
 
 ## Assignments
 
