@@ -15,22 +15,28 @@
     <!-- Header -->
     <header>
       <!-- image icon -->
-      <div>
+      <div class="logo">
         <img
           src="./assets/icons/Serenity in Chaos.jpg"
           alt="Website Page Icon"
         />
       </div>
       <!-- title text and subtitle -->
-      <h1>Serenity in Chaos</h1>
-      <h2>
-        Candle collection inspired by <em>Serenity by Jan</em> from
-        <em>The Office</em>, infused with questionable decisions.
-      </h2>
+      <div class="title">
+        <h1>Serenity in Chaos</h1>
+        <h2>
+          Candle collection inspired by <em>Serenity by Jan</em> from
+          <em>The Office</em>, infused with questionable decisions.
+        </h2>
+      </div>
     </header>
     <section class="hero">
       <!-- Optional navigation bar -->
-      <nav></nav>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#gifts">Gifts</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <!-- Slideshow block -->
       <div class="frame">
         <div class="slideshow">
@@ -103,7 +109,7 @@
         </div>
       </div>
       <!-- three by one section -->
-      <h2>Serenity in Chaos Candle Collection</h2>
+      <h2 id="products">Serenity in Chaos Candle Collection</h2>
       <hr />
       <section class="products">
         <div>
@@ -122,6 +128,7 @@
           </p>
           <p>$28.00</p>
           <p>Includes complimentary existential crisis with every burn.</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
         <div>
           <div class="imageContainer">
@@ -139,6 +146,7 @@
           </p>
           <p>$32.00</p>
           <p>Limited edition. Reality not included.</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
         <div>
           <div class="imageContainer">
@@ -156,6 +164,7 @@
           </p>
           <p>$24.99</p>
           <p>Now deductible (emotionally, not legally).</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
       </section>
       <section class="products">
@@ -175,6 +184,7 @@
           </p>
           <p>$35.00</p>
           <p>Price adjusted monthly, per the divorce decree.</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
         <div>
           <div class="imageContainer">
@@ -192,6 +202,7 @@
           </p>
           <p>$27.50</p>
           <p>Bright enough to mask your frosty energy.</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
         <div>
           <div class="imageContainer">
@@ -206,10 +217,11 @@
           </p>
           <p>$30.00</p>
           <p>Sweet enough to fool them. Strong enough to outlast them.</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
       </section>
       <!-- Gift Section -->
-      <h2>Serenity in Chaos Gift Sets</h2>
+      <h2 id="gifts">Serenity in Chaos Gift Sets</h2>
       <hr />
       <section class="giftset">
         <div>
@@ -233,6 +245,7 @@
             both.
           </p>
           <p>$64.99</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
         <div>
           <div class="giftContainer">
@@ -254,6 +267,7 @@
             nights in or over-analyzing everything.
           </p>
           <p>$54.99</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
         <div>
           <div class="giftContainer">
@@ -275,12 +289,11 @@
             or keeping one in each room "just in case."
           </p>
           <p>$39.99</p>
+          <a class="clickme" href="#modal">Add To Bag</a>
         </div>
       </section>
 
       <!-- modals -->
-      <a class="clickme" href="#modal">Click Me</a>
-
       <div id="modal" class="modalbox">
         <div>
           <h1>modal Title</h1>
@@ -295,26 +308,42 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer id="contact">
       <div class="footerNav">
         <div>
           <h3>HELP</h3>
-          <nav></nav>
+          <nav>
+            <a href="">Customer Service</a>
+            <a href="">Live Chat</a>
+          </nav>
         </div>
         <div>
           <h3>ACCOUNT</h3>
-          <nav></nav>
+          <nav>
+            <a href="">Your Account</a>
+            <a href="">Order Status</a>
+          </nav>
         </div>
         <div>
           <h3>SUBSCRIBE</h3>
-          <nav></nav>
+          <nav>
+            <a href="">Email</a>
+            <a href="">Store Offer and Events</a>
+          </nav>
         </div>
         <div>
           <h3>MEMBERSHIP</h3>
-          <nav></nav>
+          <nav>
+            <a href="">Learn More</a>
+            <a href="">Pay My Bill</a>
+          </nav>
         </div>
       </div>
-      <div class="contact"></div>
+      <div class="contactCard">
+        <div>
+          <h4>CONNECT WITH SERENITY IN CHAOS</h4>
+        </div>
+      </div>
       <div class="footnote">
         <p>&copy; Serenity in Chaos by Sabrina Ira. All Rights Reserved.</p>
         <p>
