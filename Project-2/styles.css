@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #b9a6bf;
   color: #3d3b40;
+  font-family: Nanum Myeongjo;
 }
 
 /* ----- HEADER -----*/
@@ -11,8 +16,8 @@ header {
 /* LOGO */
 .logo {
   width: auto;
+  height: 70%;
   border-radius: 50%;
-  height: 50%;
   float: left;
   margin: 1rem;
   padding: 0.3rem;
@@ -89,14 +94,18 @@ header {
 }
 
 .title > h1 {
-  /* font-size: 50px; */
+  font-size: 90px;
+  font-family: Lovers Quarrel;
+  font-weight: 200;
   animation: title 6s ease-out forwards;
   animation-iteration-count: infinite;
+  margin: 0;
 }
 
 .title > h2 {
   animation: subheader 9s ease-in-out forwards;
   animation-iteration-count: infinite;
+  font-family: Nanum Myeongjo;
 }
 
 @keyframes title {
@@ -201,6 +210,13 @@ header {
   height: 100%;
 }
 
+.slideshow > .p1,
+.slideshow > .p2,
+.slideshow > .p3,
+.slideshow > .p4 {
+  font-family: Raleway;
+}
+
 .slideshow > .p1 {
   background-color: #9b7fa6;
 }
@@ -212,6 +228,25 @@ header {
 }
 .slideshow > .p4 {
   background-color: #80cbc4;
+}
+
+/* NAVIGATION */
+nav {
+  text-align: center;
+  background-color: #b9445b;
+  padding: 0.3rem;
+}
+
+nav a {
+  text-decoration: none;
+  margin-inline: 3rem;
+  color: #cfc8d8;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #3d3b40;
+  transition: 0.3s;
 }
 
 /* HERO BOX */
@@ -307,8 +342,9 @@ header {
 /* ----- PRODUCTS ----- */
 
 h2 {
-  margin-left: 5rem;
+  margin-left: 9rem;
   margin-top: 2.5rem;
+  font-family: Raleway;
 }
 
 .products {
@@ -414,27 +450,93 @@ h2 {
   object-fit: cover;
 }
 
-/* ----- Modal Boxes ----- */
+/* ----- Click Me Button ----- */
 .clickme {
   border: 2px solid palevioletred;
   border-radius: 4px;
   padding: 4px;
-  background-color: rgb(171, 164, 89);
+  background-color: #aba459;
   text-decoration: none;
   color: white;
 }
+.clickme:hover {
+  background-color: #3d3b40;
+  color: #ffb74d;
+  transition: 0.3s;
+}
 
-.modalbox {
+.clicked {
+  display: none;
+  margin-top: 0.5rem;
+  background-color: #556f60;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.clickme:hover + .clicked {
+  display: block;
+  color: rgb(0, 0, 0);
+  background-color: #82a390;
+  padding: 1rem;
+}
+
+/* ----- Modal Boxes ----- */
+.modalbox > h2 {
+  font-size: medium;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #3d3b40;
+  font-weight: bold;
+  z-index: 1000;
+  transition: 0.3s;
+  background-color: #aba459;
+  border-radius: 5px;
+}
+
+.close-button:hover {
+  color: crimson;
+  cursor: pointer;
+  background-color: #3d3b40;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+/* .modalbox {
   background-color: rgb(240, 248, 255, 0.3);
   width: 400px;
   padding: 20% 40%;
   position: fixed;
   box-shadow: 0px 10px 30px rgb(84, 62, 62);
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   pointer-events: none;
+} */
+
+.modalbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
 }
 
 .modalbox:target {
@@ -443,11 +545,55 @@ h2 {
 }
 
 .modalbox > div {
-  background-color: rgb(196, 215, 231);
+  /* background-color: rgb(196, 215, 231);
   width: 60%;
   padding: 10px;
   margin: auto;
-  border-radius: 4px;
+  border-radius: 4px; */
+  background-color: rgb(196, 215, 231);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal-image {
+  flex: 1;
+}
+
+/* .modal-image > img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+} */
+
+.modal-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.modal-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /* ----- FOOTER ----- */
@@ -462,6 +608,10 @@ footer {
   justify-content: space-around;
 }
 
+.footerNav > div > h3 {
+  font-family: Raleway;
+}
+
 .footerNav > div,
 .footerNav > div > nav {
   display: flex;
@@ -473,6 +623,12 @@ footer {
   text-decoration: none;
   color: white;
   text-align: center;
+  transition: 0.3s;
+}
+
+.footerNav > div > nav > a:hover {
+  color: black;
+  transition: 0.3s;
 }
 
 .contactCard {
