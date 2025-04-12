@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabrina Ira - Assignment 2</title>
+    <link rel="stylesheet" crossorigin href="../../assets/assignment2-DnL-loCz.css">
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="document.getElementById('modal').style.display='block'" class="menu-link">HOME</a></li>
+          <li><a href="#" onclick="document.getElementById('modal').style.display='block'" class="menu-link">ABOUT</a></li>
+          <li><a href="#" onclick="document.getElementById('modal').style.display='block'" class="menu-link">BOOK</a></li>
+          <li><a href="#" onclick="document.getElementById('modal').style.display='block'" class="menu-link">CONTACT</a></li>
+        </ul>
+      </nav>
+      <section id="modal" class="modal">
+        <span onclick="document.getElementById('modal').style.display='none'" class="x-button topright">&times;</span>
+        <p>This is a pop-up window.</p>
+      </section>
+      <section class="webpage">
+        <iframe
+          src="../Assignment-1/index.html"
+        ></iframe>
+      </section>
+      <section class="row2">
+        <img src="../../assets/1733725507977-CjtIuAxO.jpeg" alt="image" />
+        <div class="rightblock">
+          <p class="arial">This is a hotpink paragraph, font family is Arial</p>
+          <p class="courier">
+            This is the pink paragraph, font family is Courier
+          </p>
+          <p class="corsiva">
+            This is the lightpink paragraph, font family is NOT Corsiva
+          </p>
+          <button class="button" href="#" onclick="document.getElementById('modal').style.display='block'">This is a Button</button>
+        </div>
+      </section>
+      <footer>
+        <form>
+          <p>
+            <label for="textarea"
+              >Study button, input, form, and text area elements</label
+            >
+          </p>
+          <button class="studyButton" href="#" onclick="document.getElementById('modal').style.display='block'">Study button</button>
+          <input type="text" value="This is an input element" class="input" />
+          <textarea class="textarea" rows="4" cols="50">
+This is a textarea element</textarea
+          >
+          <input type="submit" value="Submit Input" class="input" />
+        </form>
+        <p>&copy; Assignment 2 by Sabrina Ira, QCC CEWD</p>
+      </footer>
+    </main>
+  </body>
+</html>
