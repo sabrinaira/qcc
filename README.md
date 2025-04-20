@@ -10,7 +10,8 @@ A directory of my projects during the QCC SWE Spring 2025 Program
 
 - [Project 1](https://sabrinaira.github.io/qcc/src/Project-1/index.html) - Philippines Travel website
 - [Project 2](https://sabrinaira.github.io/qcc/src/Project-2/index.html) - Serenity in Chaos Candle Collection E-commerce website
-<!-- - [Project 3]() - Guess The Number game using HTML, CSS, and JavaScript -->
+- [Project 3](https://sabrinaira.github.io/guess-the-number/) - Guess The Number game using HTML, CSS, and JavaScript
+<!-- - [Project 4]() -  -->
 
 # Assignments
 
